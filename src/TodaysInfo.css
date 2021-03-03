@@ -1,0 +1,15 @@
+.TodaysInfo li {
+  list-style: none;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+
+.TodaysInfo li:first-letter {
+  text-transform: capitalize;
+}
+
+.TodaysInfo ul {
+  padding-left: 0px;
+  padding-top: 8px;
+}

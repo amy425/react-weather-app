@@ -1,38 +1,42 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #393e46;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+  min-width: 360px;
+}
+
 .App {
-  text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App hr {
+  margin: 0 0 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App #mobile {
+  max-width: 308px;
+  margin: 15px auto 0px;
+  border: solid 1px #29323c;
+  border-radius: 30px;
+  padding: 0px 10px;
+  background-image: linear-gradient(to right, #353535 0%, #29323c 100%);
+  -webkit-box-shadow: 8px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App #app {
+  max-width: 288px;
+  border: solid 0.5px #29323c;
+  margin: 60px auto;
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App #main-app {
+  padding: 0px 10px;
 }

@@ -1,0 +1,20 @@
+.LocationSection h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.LocationSection #current {
+  position: relative;
+  right: -15px;
+}
+
+.LocationSection #location-section {
+  margin-top: 15px;
+}
+
+.LocationSection .btn-primary {
+  background-color: #8bcdcd !important;
+  border-color: #8bcdcd !important;
+}

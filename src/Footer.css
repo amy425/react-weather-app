@@ -1,0 +1,21 @@
+.Footer #footer {
+  text-align: right;
+  background-color: #000;
+  padding: 0 5px 0 0;
+}
+
+.Footer #footer-text a,
+.Footer #footer p {
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.Footer #footer-text a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Footer a {
+  line-height: 1;
+}

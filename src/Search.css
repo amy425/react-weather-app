@@ -1,0 +1,22 @@
+.Search #search {
+  background-color: #eeeeee;
+  padding: 5px 10px;
+}
+
+.Search #search-bar,
+.Search #search-button {
+  font-size: 14px;
+}
+
+.Search #search-feature {
+  padding: 5px 0px;
+}
+
+.Search #search-feature .col-8 {
+  padding-right: 0px;
+}
+
+.Search .btn-primary {
+  background-color: #8bcdcd !important;
+  border-color: #8bcdcd !important;
+}

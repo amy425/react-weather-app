@@ -1,0 +1,29 @@
+#button-section .btn-secondary {
+  background-color: #eeeeee !important;
+  border-color: #eeeeee !important;
+  color: #393e46;
+}
+
+#button-section .btn-secondary:hover {
+  background-color: #8bcdcd !important;
+  border-color: #8bcdcd !important;
+  color: #fff !important;
+  transition: 1ms;
+}
+
+.TempButton #button-section .active,
+.TempButton #button-section .active:hover {
+  background-color: #8bcdcd !important;
+  border-color: #8bcdcd !important;
+  color: #fff !important;
+  pointer-events: none !important;
+}
+
+.TempButton #celsius-link,
+.TempButton #fahrenheit-link {
+  font-size: 14px;
+}
+
+.TempButton #button-section {
+  margin-top: 5px;
+}
