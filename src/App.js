@@ -10,17 +10,19 @@ import Footer from "./Footer";
 export default function App() {
   return (
     <div className="App">
-      <div id="mobile">
-        <div id="app">
-          <Search />
-          <div id="main-app">
-            <LocationSection />
-            <TopSection />
-            <hr />
-            <TodaysInfo />
-            <hr />
+      <div className="container">
+        <div id="mobile">
+          <div id="app">
+            <Search />
+            <div id="main-app">
+              <LocationSection />
+              <TopSection />
+              <hr />
+              <TodaysInfo />
+              <hr />
+            </div>
+            <TempButton />
           </div>
-          <TempButton />
         </div>
       </div>
       <Footer />
