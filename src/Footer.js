@@ -9,7 +9,7 @@ export default function Footer() {
           <p id="footer-text">
             Coded by Amy |{" "}
             <a
-              href="https://github.com/amysteel/final-weather-app"
+              href="https://github.com/amysteel/react-weather-app"
               target="_blank"
               rel="noreferrer"
             >
@@ -17,7 +17,7 @@ export default function Footer() {
             </a>{" "}
             |{" "}
             <a
-              href="https://sharp-montalcini-6f47d3.netlify.app/"
+              href="https://eloquent-roentgen-db484a.netlify.app"
               target="_blank"
               rel="noreferrer"
             >
