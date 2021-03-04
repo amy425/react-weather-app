@@ -1,11 +1,11 @@
-.Footer #footer {
+.Footer .footer {
   text-align: right;
   background-color: #000;
   padding: 0 5px 0 0;
 }
 
-.Footer #footer-text a,
-.Footer #footer p {
+.Footer .footer-text a,
+.Footer .footer p {
   color: #fff;
   font-size: 10px;
   text-decoration: none;
@@ -16,6 +16,6 @@
   line-height: 1;
 }
 
-.Footer #footer-text a:hover {
+.Footer .footer-text a:hover {
   color: rgba(255, 255, 255, 0.5);
 }

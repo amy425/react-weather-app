@@ -6,12 +6,12 @@ export default function LocationSection() {
     <div className="LocationSection">
       <div className="row align-items-center">
         <div className="col-md-6 offset-md-3">
-          <h1 id="city">London</h1>
+          <h1 className="city">London</h1>
         </div>
 
         <div className="col-md-1">
-          <button className="btn btn-primary btn-sm" id="current" type="button">
-            <i className="fas fa-location-arrow" id="location"></i>
+          <button className="btn btn-primary btn-sm current" type="button">
+            <i className="fas fa-location-arrow location"></i>
           </button>
         </div>
       </div>

@@ -1,18 +1,18 @@
-.Search #search {
+.Search .search {
   background-color: #eeeeee;
   padding: 5px 10px;
 }
 
-.Search #search-bar,
-.Search #search-button {
+.Search .search-bar,
+.Search .search-button {
   font-size: 14px;
 }
 
-.Search #search-feature {
+.Search .search-feature {
   padding: 5px 0px;
 }
 
-.Search #search-feature .col-8 {
+.Search .search-feature .col-8 {
   padding-right: 0px;
 }
 

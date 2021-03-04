@@ -5,12 +5,12 @@
   line-height: 1;
 }
 
-.LocationSection #current {
+.LocationSection .current {
   position: relative;
   right: -15px;
 }
 
-.LocationSection #location-section {
+.LocationSection {
   margin-top: 15px;
 }
 

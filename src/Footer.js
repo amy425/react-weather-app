@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <div className="Footer">
       <nav className="fixed-bottom">
-        <div id="footer">
-          <p id="footer-text">
+        <div className="footer">
+          <p className="footer-text">
             Coded by Amy |{" "}
             <a
               href="https://github.com/amysteel/react-weather-app"

@@ -4,27 +4,24 @@ import "./TempButton.css";
 export default function TempButton() {
   return (
     <div
-      className="TempButton btn-group col-12"
+      className="TempButton btn-group col-12 button-section"
       role="group"
       aria-label="Unit converter"
-      id="button-section"
     >
       <button
         type="button"
-        className="btn btn-secondary rounded-0 active"
+        className="btn btn-secondary rounded-0 active celsius-link"
         href="#"
         data-bs-toggle="button"
         aria-pressed="true"
-        id="celsius-link"
       >
         °C
       </button>
       <button
         type="button"
-        className="btn btn-secondary rounded-0"
+        className="btn btn-secondary rounded-0 fahrenheit-link"
         href="#"
         data-bs-toggle="button"
-        id="fahrenheit-link"
       >
         °F
       </button>

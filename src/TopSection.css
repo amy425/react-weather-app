@@ -1,8 +1,8 @@
-.TopSection #top-section {
+.TopSection {
   margin-top: 5px;
 }
 
-.TopSection #todays-icon {
+.TopSection .todays-icon {
   max-width: 64px;
   display: block;
   margin: 0 auto;

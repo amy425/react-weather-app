@@ -19,7 +19,7 @@ body {
   margin: 0 0 5px 0;
 }
 
-.App #mobile {
+.App .mobile {
   max-width: 308px;
   margin: 15px auto 0px;
   border: solid 1px #29323c;
@@ -30,13 +30,13 @@ body {
   box-shadow: 8px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.App #app {
+.App .app {
   max-width: 288px;
   border: solid 0.5px #29323c;
   margin: 60px auto;
   background-color: #fff;
 }
 
-.App #main-app {
+.App .main-app {
   padding: 0px 10px;
 }
