@@ -5,10 +5,11 @@ export default function TopSection() {
   return (
     <div className="TopSection">
       <div className="row align-items-center">
-        <div className="col-6 todays-icon">
+        <div className="col-6">
           <img
             src="http://openweathermap.org/img/wn/04n@2x.png"
             alt=""
+            className="todays-icon"
           />
         </div>
 
