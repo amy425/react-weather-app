@@ -13,7 +13,7 @@ export default function App() {
       <div className="container">
         <div className="mobile">
           <div className="app">
-            <Search />
+            <Search starterCity="Paris"/>
               <div className="main-app">
                 <LocationSection />
                 <TopSection />
