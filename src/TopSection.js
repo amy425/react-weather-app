@@ -1,7 +1,7 @@
 import React from "react";
 import "./TopSection.css";
 
-export default function TopSection() {
+export default function TopSection(props) {
   return (
     <div className="TopSection">
       <div className="row align-items-center">
@@ -14,7 +14,7 @@ export default function TopSection() {
         </div>
 
         <div className="col-6">
-          <h2>
+          <h2 className="Temp">
             <span className="today-temp temp"></span>
             <span className="cfunit">°C</span>
           </h2>

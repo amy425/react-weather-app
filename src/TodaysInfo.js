@@ -1,18 +1,19 @@
 import React from "react";
 import "./TodaysInfo.css";
+import Search from "./Search";
 
-export default function TodaysInfo() {
+export default function TodaysInfo(props) {
   return (
     <div className="todaysInfo row align-items-center">
       <div className="col-6">
         <ul>
           <li>
-            Today is
+            Today is 
           </li>
           <li>Time
           </li>
           <li>
-            Description<span className="text-capitalize"></span>
+            Description:<span className="text-capitalize"></span>
           </li>
         </ul>
       </div>

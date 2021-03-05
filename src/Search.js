@@ -4,6 +4,7 @@ import axios from "axios";
 
 export default function Search(props) {
   const [todaysInfo, setTodaysInfo] = useState({ ready: false });
+  const [city, setCity] = useState(props.starterCity);
   function displayTodaysInfo(response) {
     setTodaysInfo ({
       ready: true,
@@ -13,16 +14,30 @@ export default function Search(props) {
       description: response.data.list[0].weather[0].description,
       feelsLike: Math.round(response.data.list[0].main.feels_like),
       humidity: response.data.list[0].main.humidity,
-      windSpeed: Math.round(response.data.list[0].wind.speed),
-      time: new Date(response.data.list[0].dt * 1000),
-      day: new Date(response.data.list[0].dt * 1000)
+      windSpeed: Math.round(response.data.list[0].wind.speed)
     })
+  }
+
+  function search() {
+  const apiKey = `4581002eb6d6effa90c6392584a38b4b`;
+  let units = `metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTodaysInfo);
+  }
+
+  function citySearch(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function cityUpdate(event) {
+    setCity(event.target.value);
   }
   
   if (todaysInfo.ready) {
     return (
     <div className="Search">
-      <form className="search-feature">
+      <form className="search-feature" onSubmit={citySearch}>
         <div className="row">
           <div className="col-8">
             <input
@@ -31,6 +46,7 @@ export default function Search(props) {
               autoComplete="off"
               className="form-control form-control-sm search-bar"
               autoFocus="on"
+              onChange={cityUpdate}
             />
           </div>
           <div className="col-4">
@@ -42,6 +58,7 @@ export default function Search(props) {
           </div>
         </div>
       </form>
+      <div>
       {todaysInfo.name}
       {todaysInfo.iconUrl},
       {todaysInfo.temperature},
@@ -51,14 +68,11 @@ export default function Search(props) {
       {todaysInfo.windSpeed},
       {todaysInfo.time},
       {todaysInfo.day}
+      </div>
     </div>
   );
   } else {
-    const apiKey = `4581002eb6d6effa90c6392584a38b4b`;
-  let units = `metric`;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.starterCity}&units=${units}`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTodaysInfo);
-
-  return "Searching..."
+    search();
+    return "Searching..."
   }
 }

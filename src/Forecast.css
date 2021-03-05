@@ -1,0 +1,16 @@
+.carousel-caption {
+  top: 25px;
+}
+
+.carousel-caption h2 {
+  padding-top: 10px;
+}
+
+.carousel-caption ul {
+  padding-top: 0px;
+}
+
+.carousel-item img {
+  max-height: 180px;
+  border-radius: 8px;
+}

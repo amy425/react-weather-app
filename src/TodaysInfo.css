@@ -1,11 +1,11 @@
-.TodaysInfo li {
+.todaysInfo li {
   list-style: none;
   display: block;
   font-size: 12px;
   text-align: center;
 }
 
-.TodaysInfo ul {
+.todaysInfo ul {
   padding-left: 0px;
   padding-top: 8px;
 }
