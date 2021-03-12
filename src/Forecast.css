@@ -14,3 +14,28 @@
   max-height: 180px;
   border-radius: 8px;
 }
+
+.carousel-caption h3 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+li {
+  list-style: none;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+ul {
+  padding-left: 0px;
+  padding-top: 8px;
+}

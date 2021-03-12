@@ -65,7 +65,6 @@ export default function Search(props) {
       {todaysInfo.description},
       {todaysInfo.feelsLike},
       {todaysInfo.humidity},
-      {todaysInfo.windSpeed},
       {todaysInfo.time},
       {todaysInfo.day}
       </div>

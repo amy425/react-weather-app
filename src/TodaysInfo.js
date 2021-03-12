@@ -1,6 +1,5 @@
 import React from "react";
 import "./TodaysInfo.css";
-import Search from "./Search";
 
 export default function TodaysInfo(props) {
   return (
