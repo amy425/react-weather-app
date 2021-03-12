@@ -59,13 +59,22 @@ export default function Search(props) {
         </div>
       </form>
       <div>
+      {todaysInfo.time}
+      <br />
       {todaysInfo.name}
-      {todaysInfo.iconUrl},
-      {todaysInfo.temperature},
-      {todaysInfo.description},
-      {todaysInfo.feelsLike},
-      {todaysInfo.humidity},
-      {todaysInfo.time},
+      <br />
+      {todaysInfo.iconUrl}
+      <br />
+      {todaysInfo.temperature}
+      <br />
+      {todaysInfo.description}
+      <br />
+      {todaysInfo.feelsLike}
+      <br />
+      {todaysInfo.humidity}
+      <br />
+      {todaysInfo.windSpeed}
+      <br />
       {todaysInfo.day}
       </div>
     </div>

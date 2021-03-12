@@ -40,3 +40,11 @@ body {
 .App .main-app {
   padding: 0px 10px;
 }
+
+.App h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1;
+  font-weight: 400;
+}
