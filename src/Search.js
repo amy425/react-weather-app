@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Search.css";
 import axios from "axios";
-import TopSection from "./TopSection";
 
 export default function Search(props) {
   const [todaysInfo, setTodaysInfo] = useState({ ready: false });
