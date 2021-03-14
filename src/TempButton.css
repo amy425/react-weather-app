@@ -27,3 +27,7 @@
 .TempButton {
   margin-top: 5px;
 }
+
+div.col-12 {
+  padding: 0px;
+}

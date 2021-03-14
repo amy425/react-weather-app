@@ -1,13 +1,13 @@
 import React from "react";
 import "./TodaysInfo.css";
 
-export default function TodaysInfo(props) {
+export default function TodaysInfo() {
   return (
     <div className="todaysInfo row align-items-center">
       <div className="col-6">
         <ul>
           <li>
-            Today is 
+            Today is
           </li>
           <li>Time
           </li>
@@ -20,8 +20,7 @@ export default function TodaysInfo(props) {
       <div className="col-6">
         <ul>
           <li>
-            Feels Like:
-            <span className="cfunit fl-temp">°C</span>
+            Feels Like: <span className="cfunit fl-temp">°C</span>
           </li>
           <li>
             Humidity: %

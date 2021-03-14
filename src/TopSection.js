@@ -15,7 +15,7 @@ export default function TopSection(props) {
 
         <div className="col-6">
           <h2 className="Temp">
-            <span className="today-temp temp"></span>
+            {props.temperature}
             <span className="cfunit">°C</span>
           </h2>
         </div>

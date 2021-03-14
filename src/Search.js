@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import "./Search.css";
 import axios from "axios";
+import TopSection from "./TopSection";
 
 export default function Search(props) {
   const [todaysInfo, setTodaysInfo] = useState({ ready: false });
   const [city, setCity] = useState(props.starterCity);
+  
   function displayTodaysInfo(response) {
     setTodaysInfo ({
       ready: true,
       name: response.data.city.name,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`,
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.list[0].weather[0].icon}@2x.png`,
       temperature: Math.round(response.data.list[0].main.temp),
       description: response.data.list[0].weather[0].description,
       feelsLike: Math.round(response.data.list[0].main.feels_like),
@@ -59,7 +61,6 @@ export default function Search(props) {
         </div>
       </form>
       <div>
-      {todaysInfo.time}
       <br />
       {todaysInfo.name}
       <br />
@@ -74,13 +75,35 @@ export default function Search(props) {
       {todaysInfo.humidity}
       <br />
       {todaysInfo.windSpeed}
-      <br />
-      {todaysInfo.day}
       </div>
     </div>
   );
   } else {
     search();
-    return "Searching..."
+    return (
+    <div className="Search">
+      <form className="search-feature" onSubmit={citySearch}>
+        <div className="row">
+          <div className="col-8">
+            <input
+              type="search"
+              placeholder="Searching..."
+              autoComplete="off"
+              className="form-control form-control-sm search-bar"
+              autoFocus="on"
+              onChange={cityUpdate}
+            />
+          </div>
+          <div className="col-4">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100 btn-sm search-button"
+            />
+          </div>
+        </div>
+      </form>
+      </div>
+    );
   }
 }

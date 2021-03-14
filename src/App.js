@@ -22,7 +22,7 @@ export default function App() {
                 <TodaysInfo />
                 <hr />
                 <Forecast starterCity="London"/>
-              </div>
+                </div>
             <TempButton />
           </div>
         </div>
